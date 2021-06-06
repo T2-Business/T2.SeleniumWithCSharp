@@ -22,12 +22,12 @@ Selenium is a portable software testing suite for web applications. Primarily, i
 Commands
 
 Description	Syntax
-Click()	This method is used to click on webelement.	void IWebElement.Click()
+<p><b>Click()	This method is used to click on webelement.	void IWebElement.Click()
 SendKeys(String value)	This method is used to send values to webelement.	void IWebElement.SendKeys(String value)
 where value is the value to be entered in webelement.
-
-<p>Close()	This method closes the browser window that the driver has focus of </p> 	
 </p> 
+<p>Close()	This method closes the browser window that the driver has focus of </p> 	
+
 <p>void IWebDriver.Close()  Dispose()	This method closes all browser windows and safely ends the session
 void IWebDriver.Dispose()</p>
 <p>Quit()	This method internally calls Dispose() method	void IWebDriver.Quit()</p>
