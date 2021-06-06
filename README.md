@@ -21,13 +21,14 @@ Selenium is a portable software testing suite for web applications. Primarily, i
 #WebElements Commands in Selenium WebDriver with C Sharp
 Commands
 <table>
-  <th>
-   <td>Syntax
+  <tr>
+   <td>
+Syntax	   
 </td>
    <td>
      Description
 </td>
-  </th> 
+  </tr> 
     <tr>    
       <td> Click()  </td> 
       <td> This method is used to click on webelement.	void IWebElement.Click()
