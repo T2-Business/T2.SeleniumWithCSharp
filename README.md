@@ -20,7 +20,7 @@ Selenium is a portable software testing suite for web applications. Primarily, i
 
 #WebElements Commands in Selenium WebDriver with C Sharp
 Commands
-<tabl>
+<table>
   <th>
    <td>Syntax
 </td>
@@ -115,4 +115,5 @@ data=driver.FindElement(By.Id(“”)).GetAttribute(“Attribute Name”);   </t
       <td>    int y  </td> 
       <td>  int y = driver.FindElement(By.Id(“”)).Location.Y  </td> 
 </tr>
+</table>
  
