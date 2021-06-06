@@ -18,8 +18,9 @@ Selenium is a portable software testing suite for web applications. Primarily, i
 <img src="https://github.com/T2-Business/T2.SeleniumWithCSharp/blob/main/selenium.png"/>
 
 
-#WebElements Commands in Selenium WebDriver with C Sharp
-Commands
+#WebElements Commands in Selenium WebDriver with C Sharp  Commands
+
+
 <table style ="background-color: dodgerblue;">
   <tr>
    <td>
