@@ -20,7 +20,7 @@ Selenium is a portable software testing suite for web applications. Primarily, i
 
 #WebElements Commands in Selenium WebDriver with C Sharp
 Commands
-<table style ="    background-color: dodgerblue;">
+<table style ="background-color: dodgerblue;">
   <tr>
    <td>
 Syntax	   
