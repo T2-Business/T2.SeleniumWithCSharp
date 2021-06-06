@@ -20,41 +20,99 @@ Selenium is a portable software testing suite for web applications. Primarily, i
 
 #WebElements Commands in Selenium WebDriver with C Sharp
 Commands
-
-Description	Syntax
-<p><b>Click()	This method is used to click on webelement.	void IWebElement.Click()
-SendKeys(String value)	This method is used to send values to webelement.	void IWebElement.SendKeys(String value)
-where value is the value to be entered in webelement.
-</p> 
-<p>Close()	This method closes the browser window that the driver has focus of </p> 	
-
-<p>void IWebDriver.Close()  Dispose()	This method closes all browser windows and safely ends the session
-void IWebDriver.Dispose()</p>
-<p>Quit()	This method internally calls Dispose() method	void IWebDriver.Quit()</p>
-<p>FindElement()	This method is used to Find first WebElement in webpage using some properties like Xpath, ClassName, CssSelector, Id, etc..	 IWebElement ISearchContext.FindElement(By.Xpath(xpathexpression))
-Return type of FindElement method is IWebElement.</p>
-
-<p>FindElements()	This method is used to Find WebElements in webpage using some properties like Xpath, ClassName, CssSelector, Id, etc..	<IWebElement> ISearchContext.FindElements(By.Xpath(xpathexpression))
-Return type of FindElements method is array of WebElements.
-</p>
-<p>SwitchTo()	This method is used to switch to Frames, Windows, Alert, ActiveElement	ITargetLocator IWebDriver.SwitchTo()
-return type is the target locator.
-</p>
-<p>Manage()	This method is used to perform windows based operations like maximize, minimize etc..	 IOptions IWebDriver.Manage()
-return type is options
-  </p>
- <p> Submit()	This method will submit the form and will send to server. I personally don’t use this.	driver.FindElement(By.Id(“”)).Submit();</p>
-<p>GetAttribute()	This method will fetch attribute from WebElement and will return as String	String
-data=driver.FindElement(By.Id(“”)).GetAttribute(“Attribute Name”);<p>
-
-<p>GetCssValue()	This method will return css attribute of WebElement which you will pass and will return String value	String data=driver.FindElement(By.Id(“”)).GetCssValue(“CSS Attribute”);
-Properties	Description	Syntax </p>
-<p>Text	 : Capture the text from WebElement and return String	String data=driver.FindElement(By.Id(“”)).Text;</p>
-<p>Selected : 	This will get whether element is Selected or not and this will be only applicable for input type like Radio button, Checkbox etc	Boolean data=driver.FindElement(By.Id(“”)).Selected;</p>
-<p> Enabled :	This will check whether element is enabled or not and return Boolean	Boolean data=driver.FindElement(By.Id(“”)).Enabled;</p>
-<p>Displayed	This will check of element presence in DOM and will return Boolean	Boolean data=driver.FindElement(By.Id(“”)).Displayed;</p>
-<p>TagName	It finds the TagName of element and return as a String	String data=driver.FindElement(By.Id(“”)).TagName;</p>
-<p>Size	It returns the Size of WebElement like Widht and Height	int height=driver.FindElement(By.Id(“”)).Size.Height;</p>
-<p>int width = driver.FindElement(By.Id(“”)).Size.Width;</p>
-<p>Location	It help us to find coordinates  of WebElement	int x = driver.FindElement(By.Id(“”)).Location.X;</p>
-<p>int y = driver.FindElement(By.Id(“”)).Location.Y</p>
+<tabl>
+  <th>
+   <td>Syntax
+</td>
+   <td>
+     Description
+</td>
+  </th> 
+    <tr>    
+      <td> Click()  </td> 
+      <td> This method is used to click on webelement.	void IWebElement.Click()
+	 </td> 
+   </tr>
+ <tr>    
+      <td> SendKeys(String value)  </td> 
+      <td> This method is used to send values to webelement.	void IWebElement.SendKeys(String value)
+where value is the value to be entered in webelement.   </td> 
+</tr>
+ <tr>    
+      <td>Close()	   </td> 
+      <td>  This method closes the browser window that the driver has focus of void IWebDriver.Close()  </td> 
+</tr>
+ <tr>    
+      <td>   Dispose() </td> 
+      <td> This method closes all browser windows and safely ends the session
+void IWebDriver.Dispose()  </td> 
+</tr>
+ <tr>    
+      <td> Quit()  </td> 
+      <td> his method internally calls Dispose() method	void IWebDriver.Quit()  </td> 
+</tr>
+ <tr>    
+      <td> FindElement()  </td> 
+      <td> This method is used to Find first WebElement in webpage using some properties like Xpath, ClassName, CssSelector, Id, etc..	 IWebElement ISearchContext.FindElement(By.Xpath(xpathexpression))
+Return type of FindElement method is IWebElement  </td> 
+</tr>
+   <tr>    
+      <td> SwitchTo()	   </td> 
+      <td>  This method is used to switch to Frames, Windows, Alert, ActiveElement	ITargetLocator IWebDriver.SwitchTo()
+return type is the target locator. </td> 
+</tr>
+  <tr>    
+      <td>  Manage()  </td> 
+      <td>  this method is used to perform windows based operations like maximize, minimize etc..	 IOptions IWebDriver.Manage()
+return type is options  </td> 
+</tr>
+  <tr>    
+      <td>  Submit()  </td> 
+      <td> this method will submit the form and will send to server. I personally don’t use this.	driver.FindElement(By.Id(“”)).Submit();   </td> 
+</tr>
+  <tr>    
+      <td>  GetAttribute()	  </td> 
+      <td> This method will fetch attribute from WebElement and will return as String	String
+data=driver.FindElement(By.Id(“”)).GetAttribute(“Attribute Name”);   </td> 
+</tr>
+  <tr>    
+      <td>  GetCssValue()  </td> 
+      <td> This method will return css attribute of WebElement which you will pass and will return String value	String data=driver.FindElement(By.Id(“”)).GetCssValue(“CSS Attribute”);roperties	Description	Syntax    </td> 
+</tr>
+   <tr>    
+      <td> Text   </td> 
+      <td>   > Capture the text from WebElement and return String	String data=driver.FindElement(By.Id(“”)).Text; </td> 
+</tr>
+ <tr>    
+      <td> Selected    </td> 
+      <td> 	This will get whether element is Selected or not and this will be only applicable for input type like Radio button, Checkbox etc	Boolean data=driver.FindElement(By.Id(“”)).Selected  </td> 
+</tr>
+ <tr>    
+      <td> Enabled    </td> 
+      <td>  This will check whether element is enabled or not and return Boolean	Boolean data=driver.FindElement(By.Id(“”)).Enabled; </td> 
+</tr>
+ <tr>    
+      <td> Displayed   </td> 
+      <td> This will check of element presence in DOM and will return Boolean	Boolean data=driver.FindElement(By.Id(“”)).Displayed;   </td> 
+</tr>
+ <tr>    
+      <td>   TagName </td> 
+      <td>    	It finds the TagName of element and return as a String	String data=driver.FindElement(By.Id(“”)).TagName;</td> 
+</tr>
+ <tr>    
+      <td>  Size  </td> 
+      <td>  	It returns the Size of WebElement like Widht and Height	int height=driver.FindElement(By.Id(“”)).Size.Height;  </td> 
+</tr>
+<tr>    
+      <td>   width   </td> 
+      <td> int width = driver.FindElement(By.Id(“”)).Size.Width;   </td> 
+</tr>
+<tr>    
+      <td> Location   </td> 
+      <td>   It help us to find coordinates  of WebElement	int x = driver.FindElement(By.Id(“”)).Location.X; </td> 
+</tr>
+ <tr>    
+      <td>    int y  </td> 
+      <td>  int y = driver.FindElement(By.Id(“”)).Location.Y  </td> 
+</tr>
+ 
